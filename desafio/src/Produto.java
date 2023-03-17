@@ -51,6 +51,8 @@ public class Produto {
                 "codigo=" + codigo +
                 ", nome='" + nome + '\'' +
                 ", precoVenda=" + precoVenda +
+                ", precoCusto=" + precoCusto +
+                ", estoque=" + estoque +
                 '}';
     }
 

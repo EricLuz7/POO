@@ -103,12 +103,12 @@ public class GerenciarProdutos {
         }
     }
     public void execConsultarValorEstoque(){
-        double valorTotal;
+        double valorTotal = 0;
+        double soma = 0;
         for(Produto p: produtos){
-             valorTotal = p.getEstoque() * p.getPrecoVenda();
-            System.out.println(valorTotal);
-            return;
+             valorTotal += p.getEstoque() * p.getPrecoVenda();
         }
+        System.out.println(valorTotal);
     }
 }
 
